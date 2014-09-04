@@ -1,0 +1,147 @@
+/*
+	
+	FUNCOES
+
+*/
+
+.setAnimation(@vlr) {
+	animation: @vlr;
+	-webkit-animation: @vlr;
+	-moz-animation: @vlr;
+	-o-animation: @vlr;
+	-ms-animation: @vlr;
+	-khtml-animation: @vlr;
+}
+
+.setBorderRadius(@dir, @tam) {
+
+	.setBorderRadius() when (@dir = all) {
+		border-radius: @tam !important;
+		-moz-border-radius: @tam !important;
+		-webkit-border-radius: @tam !important;
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = top) {
+		-webkit-border-top-left-radius: @tam !important;
+		-webkit-border-top-right-radius: @tam !important;
+		-moz-border-radius-topleft: @tam !important;
+		-moz-border-radius-topright: @tam !important;
+		border-top-left-radius: @tam !important;
+		border-top-right-radius: @tam !important;
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = topleft) {
+		border-top-left-radius: @tam !important;
+		-moz-border-radius-topleft: @tam !important;
+		-webkit-border-top-left-radius: @tam !important;		
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = topright) {
+		border-top-right-radius: @tam !important;
+		-moz-border-radius-topright: @tam !important;
+		-webkit-border-top-right-radius: @tam !important;
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = bottom) {
+		-webkit-border-bottom-left-radius: @tam !important;
+		-webkit-border-bottom-right-radius: @tam !important;
+		-moz-border-radius-bottomleft: @tam !important;
+		-moz-border-radius-bottomright: @tam !important;
+		border-bottom-left-radius: @tam !important;
+		border-bottom-right-radius: @tam !important;
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = bottomleft) {
+		border-bottom-left-radius: @tam !important;
+		-moz-border-radius-bottomleft: @tam !important;
+		-webkit-border-bottom-left-radius: @tam !important;
+	} .setBorderRadius();
+
+	.setBorderRadius() when (@dir = bottomright) {
+		border-bottom-right-radius: @tam !important;
+		-moz-border-radius-bottomright: @tam !important;
+		-webkit-border-bottom-right-radius: @tam !important;
+	} .setBorderRadius();
+
+}
+
+.setBoxShadow(@content) {
+	box-shadow: @content !important;
+	-moz-box-shadow: @content !important;
+	-webkit-box-shadow: @content !important;
+}
+
+.setTextShadow(@content) {
+	text-shadow: @content !important;
+	-moz-text-shadow: @content !important;
+	-webkit-text-shadow: @content !important;
+}
+
+.setTransition(@time) {
+	-khtml-transition:  @time !important;
+	-moz-transition:  @time !important;
+	-ms-transition:  @time !important;
+	-o-transition:  @time !important;
+	transition: @time !important;
+	-webkit-transition:  @time !important;
+}
+
+.setOpacity(@opAll, @opIE, @opOverride) {
+
+	.setOpacity() when (@opOverride = null) {
+		opacity: @opAll;
+		filter: alpha(opacity=@opAll);
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opIE})";
+		-moz-opacity: @opAll;
+		-khtml-opacity: @opAll;
+		-o-opacity: @opAll;
+		-webkit-opacity: @opAll;
+	} .setOpacity();
+
+	.setOpacity() when (@opOverride = important) {
+		opacity: @opAll !important;
+		filter: alpha(opacity=@opAll);
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opIE})" !important;
+		-moz-opacity: @opAll !important;
+		-khtml-opacity: @opAll !important;
+		-o-opacity: @opAll !important;
+		-webkit-opacity: @opAll !important;
+	} .setOpacity();
+
+}
+
+.setOutline(@vlr) {
+	outline: @vlr !important;
+}
+
+.setPerspective(@vlr) {
+	-webkit-perspective: @vlr;
+    -moz-perspective: @vlr;
+    -ms-perspective: @vlr;
+    -o-perspective: @vlr;
+    perspective: @vlr;
+}
+
+.setTransform(@vlr) {
+	-webkit-transform: @vlr;
+	-moz-transform: @vlr;
+	-ms-transform: @vlr;
+	-o-transform: @vlr;
+	transform: @vlr;
+}
+
+.setTransformOrigin(@vlr) {
+	-webkit-transform-origin: @vlr;
+    -moz-transform-origin: @vlr;
+    -ms-transform-origin: @vlr;
+    -o-transform-origin: @vlr;
+    transform-origin: @vlr;
+}
+
+.setTransformStyle(@vlr) {
+	-webkit-transform-style: @vlr;
+	-moz-transform-style: @vlr;
+	-ms-transform-style: @vlr;
+	-o-transform-style: @vlr;
+	transform-style: @vlr;
+}

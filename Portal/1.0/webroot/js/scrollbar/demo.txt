@@ -1,0 +1,12 @@
+<link href="webroot/js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+<script>
+	(function($){
+		$(window).load(function(){
+
+			$("#div-texto-descricao-lateral").mCustomScrollbar({
+				theme:"minimal-dark"
+			});
+
+		});
+	})(jQuery);
+</script>	

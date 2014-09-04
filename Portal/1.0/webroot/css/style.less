@@ -1,0 +1,170 @@
+/* 
+
+	LESS
+
+*/
+	
+
+		/* Ambiente */
+	@import "ambiente.less";
+
+	/* Cores */
+	@import "cores.less";
+
+	/* Fontes */
+	@import "fontes.less";
+
+	/* Funcoes */
+	@import "funcoes.less";
+
+	/* Icons */
+	@import "icons.less";
+
+	/* Padroes */
+	@import "padroes.less";
+
+	/**/
+
+	* {
+		font-family: @fontePadrao;
+		font-weight: 300;
+		word-wrap: break-word;
+	}
+
+	body {
+
+	}
+	textarea {
+		resize: none;
+	}
+	img {
+		display: inline-block !important;
+	}
+
+	/* Topo */
+	.div-total-topo {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	/*MENU*/
+	.div-total-menu,
+	.navbar-menu-topo {
+		background: @preto url('../imagens/topo/background.png') ;
+		border: 0;
+	}
+	.navbar-menu-topo {
+		float: right;
+	}
+	.container-topo > p {
+		padding: 13px 0 0 0;
+		float: left;
+		display: inline-block;
+		color: @branco;
+		font-size: 33px;
+		font-weight: 700;
+	}
+	
+
+	/* Meio */
+	.div-total-meio {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+
+
+	/* Rodape */
+	.div-total-rodape {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.container-rodape {
+		background: @cinzaForte !important;
+	}
+		/* DESCRICAO */
+		.div-desc-rodape {
+			padding: 15px 0;
+			border-top: 2px solid @cinzaMenu;
+			background: @cinzaForte;
+		}
+			.titulo-rodape {
+				padding: 15px 0 0 0;
+				#titulos > .titulo-padrao-rodape;
+			}
+			.descricao-rodape {
+				#descricoes > .descricao-padrao-rodape;
+			}
+
+			@media only screen and (max-width: @maxSM) {
+				.div-desc-logo,
+				.div-desc-endereco,
+				.div-desc-contato,
+				.div-desc-mapa {
+					padding: 15px;
+				}
+			}
+
+			/* LOGO */		
+			.div-desc-logo img {
+				padding: 15px;
+				height: 150px;
+				background: @cinzaForte;
+				.setBorderRadius(all, 15px);
+			}
+
+			/* CONTATO */	
+			.div-desc-contato ul {
+				padding: 0;
+				list-style: none;
+				text-align: left;
+			}
+				.div-desc-contato ul > li {
+					#descricoes > .descricao-padrao-rodape;
+				}
+					.div-desc-contato ul > li > span {
+						margin-right: 8px;
+					}
+
+	
+		/* DIREITOS */
+		.div-direitos-rodape {
+			padding: 5px;
+			background: @cinzaMenu;
+		}
+		.div-direitos-rodape-texto > p{
+			color: @branco;
+		}
+
+			/* TEXTO */
+			.div-desc-contato > ul > li > #contato {
+				font-size: 9px !important;
+				font-weight: 700;
+
+			}
+			.div-direitos-rodape-texto {
+				padding-top: 8px;
+			}
+				.div-direitos-rodape-texto .descricao-rodape {
+					margin: 0;
+					font-weight: 700 !important;
+				}
+
+			/* LOGO */
+			.div-direitos-rodape-logo  {
+				text-align: right !important;
+			}
+				.div-direitos-rodape-logo > span {
+					color:@branco;
+				}
+				.div-direitos-rodape-logo > span > a {
+					margin: 0 10px 0 0;
+				}
+			
+
+
+
+
