@@ -32,7 +32,7 @@
 	}
 
 	body {
-
+		background: @cinzaFraco;
 	}
 	textarea {
 		resize: none;
@@ -48,24 +48,45 @@
 		text-align: center;
 	}
 
-	/*MENU*/
-	.div-total-menu,
-	.navbar-menu-topo {
-		background: @preto url('../imagens/topo/background.png') ;
-		border: 0;
-	}
-	.navbar-menu-topo {
-		float: right;
-	}
-	.container-topo > p {
-		padding: 13px 0 0 0;
-		float: left;
-		display: inline-block;
-		color: @branco;
-		font-size: 33px;
-		font-weight: 700;
-	}
+		/*MENU*/
+		.div-total-menu,
+		.navbar-menu-topo {
+			background: @preto url('../imagens/topo/background.png') ;
+			border: 0;
+		}
+		.div-total-menu {
+			z-index:100;
+			.setBoxShadow(-3px 0 5px 7px #000);
+		}
+		.navbar-menu-topo {
+			float: right;
+		}
+		.container-topo {
+			padding-top: 10px;
+		}
+		.navbar-inverse .navbar-nav > li > a {
+			&:hover {
+				
+			}
+		}
+		.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+			color: #fff;
+			background-color: #080808;
+			.setBorderRadius(all,10px);
+
+		}
+		.container-topo > p {
+			padding: 13px 0 0 0;
+			float: left;
+			display: inline-block;
+			color: @branco;
+			font-size: 33px;
+			font-weight: 700;
+		}
 	
+
+
+
 
 	/* Meio */
 	.div-total-meio {
@@ -73,6 +94,35 @@
 		margin: 0;
 		text-align: center;
 	}
+
+
+		/*INICIAL*/
+		.container-meio {
+			z-index:10;
+			background: @branco;
+			padding:15px 0 30px 0;
+		}
+		.container-meio > div > img {
+			height: 200px;
+		}
+		.container-meio > div > h1 {
+			color: @cinzaForte;
+			font-size: 23px;
+			font-weight:700;
+		}
+		.texto-meio {
+			padding: 0 10px;
+			font-size: 15px !important;
+			font-weight:400 !important;
+			text-align: justify !important;
+		}
+		.texto-meio-outros {
+			padding: 0 10px;
+			font-size: 15px !important;
+			font-weight:400 !important;
+			text-align: center !important;
+		}
+
 
 
 
@@ -88,7 +138,7 @@
 		/* DESCRICAO */
 		.div-desc-rodape {
 			padding: 15px 0;
-			border-top: 2px solid @cinzaMenu;
+			.setBoxShadow(2px 0 5px 3px #000);
 			background: @cinzaForte;
 		}
 			.titulo-rodape {
@@ -155,6 +205,7 @@
 
 			/* LOGO */
 			.div-direitos-rodape-logo  {
+				padding-top:10px;
 				text-align: right !important;
 			}
 				.div-direitos-rodape-logo > span {

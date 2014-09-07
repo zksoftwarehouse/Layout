@@ -6,7 +6,7 @@
    
     <!-- -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 div-desc-logo">
-      <img class="img-responsive" src="/zk/1.0/webroot/imagens/logo.png">
+      <img class="img-responsive" src="/zk/raiz/imagens/logo.png">
     </div>
 
     <!-- -->
@@ -37,7 +37,7 @@
 
     <!-- -->
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 div-direitos-rodape-texto">
-      <p class="descricao-rodape">TODOS OS DIREITOS RESERVADOS. ZK SOFTWARE HOUSE</p>
+      <p class="descricao-rodape">TODOS OS DIREITOS RESERVADOS. ZK SOFTWARE HOUSE.</p>
     </div>
 
     <!-- -->

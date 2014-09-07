@@ -12,6 +12,6 @@
 	}
 
 	$vP;
-	$dir = '/zk/1.0';
+	$dir = '/zk/';
 	$urlRaiz = new Sistema($dir);
 ?>
