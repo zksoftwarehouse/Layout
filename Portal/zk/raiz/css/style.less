@@ -32,7 +32,7 @@
 	}
 
 	body {
-		background: @cinzaFraco;
+		background: @cinzaFundo;
 	}
 	textarea {
 		resize: none;
@@ -50,7 +50,8 @@
 
 		/*MENU*/
 		.div-total-menu,
-		.navbar-menu-topo {
+		.navbar-menu-topo,
+		.container-topo{
 			background: @preto url('../imagens/topo/background.png') ;
 			border: 0;
 		}
@@ -58,33 +59,106 @@
 			z-index:100;
 			.setBoxShadow(-3px 0 5px 7px #000);
 		}
-		.navbar-menu-topo {
-			float: right;
+		div-logo-menu-topo {
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 100;
+			background: @branco;
 		}
-		.container-topo {
-			padding-top: 10px;
-		}
-		.navbar-inverse .navbar-nav > li > a {
-			&:hover {
-				
+		
+			/* LOGO TOPO */
+			.div-logo-topo {
+				padding-top: 15px;
 			}
-		}
-		.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-			color: #fff;
-			background-color: #080808;
-			.setBorderRadius(all,10px);
+			.eft-rolling .div-logo-topo {
+				margin-top: 5px;
+			}
+				.div-logo-topo > img {
+					max-width: 500px;			
+				}
 
-		}
-		.container-topo > p {
-			padding: 13px 0 0 0;
-			float: left;
-			display: inline-block;
-			color: @branco;
-			font-size: 33px;
-			font-weight: 700;
-		}
-	
+			/* MENU TOPO */
+			.div-menu-topo .navbar-menu-topo,
+			.div-menu-topo .navbar-menu-topo * {
+				.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+			}
+			.div-menu-topo .navbar-menu-topo {
+				border: 0;
+				background: transparent;
+			}
+			
+				.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+					color:@branco;
+					background-color: @pretoMenu;
+				}
+				@media only screen and (max-width: @maxXS) {
+					.navbar-menu-topo .navbar-toggle,
+					.navbar-menu-topo .navbar-toggle:hover,
+					.navbar-menu-topo .navbar-toggle:focus,
+					.navbar-menu-topo .navbar-toggle:active {
+						background: @pretoMenu;
+						border: 1px solid @branco;
+					}
+						.navbar-menu-topo .navbar-toggle .span-menu {
+							color: @branco;
+							font-weight: 900;
+							font-size: 20px;
+						}
+					.navbar-menu-topo .navbar-collapse {
+						border-top: 2px solid @branco;
+						background: @pretoMenu;
+					}
+						.navbar-menu-topo .navbar-nav > li > a {
+							color: @branco;
+							&:hover {
+								background: @branco;
+								color: @branco;
+							}
+						}
+						
+				}
+				@media only screen and (min-width: @minSM) and (max-width: @maxSM) {
+					.navbar-menu-topo{
+						margin-top: 50px;
+					}
+				}
+				@media only screen and (min-width: @minSM) {					
+					.eft-rolling {
+						.setOpacity(0.8, 80, important);
+					}
+						.eft-rolling .navbar-nav > li > a {
+							padding-top: 15px !important;
+						}
+					.navbar-menu-topo .navbar-nav > li {
+						&:hover .eft-menu {
+							height: 100%;
+						}
+					}
+					.navbar-menu-topo .navbar-nav > li > a {
+						padding-top: 30px;
+						position: relative;
+						z-index: 5;
+						font-size: 18px;
+						font-weight: 900;
+						color: @branco;
+						letter-spacing: 2px;
 
+						&:hover {
+							color: @branco;
+						}
+					}
+
+					.eft-menu {
+						width: 100%;
+						height: 2px;
+						background: @pretoMenu;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						z-index: 4;
+					}
+				}			
 
 
 
@@ -106,7 +180,7 @@
 			height: 200px;
 		}
 		.container-meio > div > h1 {
-			color: @cinzaForte;
+			color: @pretoMenu;
 			font-size: 23px;
 			font-weight:700;
 		}
@@ -133,13 +207,15 @@
 		text-align: center;
 	}
 	.container-rodape {
-		background: @cinzaForte !important;
+		//background: @cinzaForte !important;
+		background: url('../imagens/bg-header.png') repeat;
 	}
 		/* DESCRICAO */
 		.div-desc-rodape {
 			padding: 15px 0;
 			.setBoxShadow(2px 0 5px 3px #000);
-			background: @cinzaForte;
+			//background: @cinzaForte;
+			background: @cinzaMenu url('../imagens/bg-header.png') repeat;
 		}
 			.titulo-rodape {
 				padding: 15px 0 0 0;
@@ -162,7 +238,7 @@
 			.div-desc-logo img {
 				padding: 15px;
 				height: 150px;
-				background: @cinzaForte;
+				
 				.setBorderRadius(all, 15px);
 			}
 
@@ -183,10 +259,10 @@
 		/* DIREITOS */
 		.div-direitos-rodape {
 			padding: 5px;
-			background: @cinzaMenu;
+			background: @preto url('../imagens/topo/background.png');
 		}
-		.div-direitos-rodape-texto > p{
-			color: @branco;
+		.div-direitos-rodape-texto > p {
+			color: @branco !important;
 		}
 
 			/* TEXTO */
@@ -215,7 +291,3 @@
 					margin: 0 10px 0 0;
 				}
 			
-
-
-
-

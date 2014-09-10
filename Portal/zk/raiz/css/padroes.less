@@ -48,6 +48,18 @@
 		}
 	}
 
+	.btn-Cinza {
+		color:@branco;
+		background: @cinzaMenu;
+
+		&:hover {
+			color: @pretoMenu;
+			background: lighten(@cinzaMenu,30%);
+			border: 1px solid @pretoMenu;
+			.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+		}
+	}
+
 /* FRM-GRP-PADRAO */
 .frm-grp-padrao {
 	margin: 10px 0;

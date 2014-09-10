@@ -6,7 +6,7 @@
    
     <!-- -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 div-desc-logo">
-      <img class="img-responsive" src="/zk/raiz/imagens/logo.png">
+      <img class="img-responsive" src="/zk/raiz/imagens/logo2.png">
     </div>
 
     <!-- -->
