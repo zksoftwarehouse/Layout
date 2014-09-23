@@ -12,7 +12,8 @@
 <![endif]-->
 <!-- OUTROS -->
 <!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 <link href="<?=$GLOBALS['urlRaiz']->getUrlRaiz()?>/raiz/css/magic.css" rel="stylesheet">
 <link href="<?=$GLOBALS['urlRaiz']->getUrlRaiz()?>/raiz/css/animate.css" rel="stylesheet">
 <link href="<?=$GLOBALS['urlRaiz']->getUrlRaiz()?>/raiz/css/style.css" rel="stylesheet">

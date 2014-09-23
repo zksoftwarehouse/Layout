@@ -8,7 +8,7 @@
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 div-desc-compac">
 	    	<img class="img-responsive" src="/zk/raiz/imagens/meio/compacta.png">
 	      <h1 class="titulo-meio">COMPACTADOR</p>
-	      <p class="texto-meio">É o único do mundo que não utiliza redundância de dados e que permite criptografar o arquivo compactado</p>
+	      <p class="texto-meio">O Compactador ZK é o único do mundo que não utiliza redundância de dados e que permite criptografar os arquivos compactados.</p>
     	</div>
 
 	   <!-- -->
