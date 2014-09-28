@@ -4,11 +4,19 @@
   	<!-- -->
 	<div class="container container-meio">
 
+		<!-- -->
+    	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 div-desc">
+	      <h1 class="titulo-meio">ZK Software House</h1>
+	      <p class="texto-meio">A ZK Software House possui aplicações que fazem parte do conjunto de soluções ZK (Compactação, criptografia e busca em banco de dados) trarão reconhecimento para as referidas fórmulas e com grande potencial de impulsionar diversas áreas.</p>
+	      <p class="texto-meio">Os algoritmos ZK são diferenciados por utilizarem uma Matemática Computacional inédita, por estarem sendo preparados para preencherem uma lacuna muito grande no mercado nacional.</p>
+    	</div>
+    
+
 	   <!-- -->
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 div-desc-compac">
 	    	<img class="img-responsive" src="/zk/raiz/imagens/meio/compacta.png">
 	      <h1 class="titulo-meio">COMPACTADOR</p>
-	      <p class="texto-meio">O Compactador ZK é o único do mundo que não utiliza redundância de dados e que permite criptografar os arquivos compactados.</p>
+	      <p class="texto-meio">O Compactador ZK é o único do mundo que não utiliza redundância de dados e que permite criptografar os arquivos compactados, revolucionará os processos de armazenamento de dados e a segurança da Informação</p>
     	</div>
 
 	   <!-- -->
