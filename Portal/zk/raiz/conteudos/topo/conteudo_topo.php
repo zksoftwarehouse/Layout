@@ -8,7 +8,7 @@
 	  	</div>
 
 		<!-- -->
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 div-menu-topo zerar-padding-all">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 div-menu-topo zerar-padding-all">
 		    <div id="navbar-menu-topo" class="navbar navbar-default navbar-menu-topo" role="navigation">
 				<div class="container-fluid">
 		       
@@ -23,7 +23,7 @@
 			        <!-- -->
 			        <div class="collapse navbar-collapse" id="menu-mobile">
 	         
-		            	<ul class="nav navbar-nav navbar-center text-align-center-sm text-align-right-md text-align-right-lg">
+		            	<ul class="nav navbar-nav navbar-right text-align-center-sm text-align-right-md text-align-right-lg">
 			            	<!-- -->
 			            	<li>
 			              		<a href="<?=$GLOBALS['urlRaiz']->getUrlRaiz();?>">Início</a>
@@ -54,6 +54,12 @@
 
 				</div>
 	    	</div>    
+	  	</div>
+
+	  	<!-- -->
+	  	<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 div-menu-idiomas zerar-padding-all">
+	  		<a href=""><img class="img-responsive pull-left" src="/zk/raiz/imagens/topo/bandeira-brasil.png"></a>
+	  		<a href=""><img class="img-responsive pull-left" src="/zk/raiz/imagens/topo/bandeira-inglaterra.png"></a>
 	  	</div>
 
 	</div>
